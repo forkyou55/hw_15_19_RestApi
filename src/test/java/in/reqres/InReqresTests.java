@@ -81,7 +81,7 @@ public class InReqresTests {
     }
 
     @Test
-    void singleResource() {
+    void singleResourceTest() {
         given()
                 .log().uri()
                 .contentType(JSON)
@@ -95,7 +95,7 @@ public class InReqresTests {
                 .body("data.name", is("fuchsia rose"))
                 .body("data.year", is(2001))
                 .body("data.color", is("#C74375"))
-                .body("pantone_value", is("17-2031"));
+                .body("data.pantone_value", is("17-2031"));
     }
     @Test
     void idUserTest() {
